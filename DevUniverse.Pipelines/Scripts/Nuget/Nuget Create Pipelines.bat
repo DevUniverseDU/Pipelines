@@ -1,0 +1,1 @@
+dotnet pack "..\..\Sources\Infrastructure\DevUniverse.Pipelines.Infrastructure\DevUniverse.Pipelines.Infrastructure.csproj" --output "..\..\Local/Nuget"

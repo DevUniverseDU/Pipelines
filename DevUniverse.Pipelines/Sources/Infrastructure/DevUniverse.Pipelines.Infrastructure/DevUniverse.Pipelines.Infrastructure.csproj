@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net5.0;netstandard2.0;netstandard2.1</TargetFrameworks>
+        <LangVersion>default</LangVersion>
+
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <PackageId>DevUniverse.Pipelines</PackageId>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Title>DevUniverse.Pipelines</Title>
+        <Authors>Roman Doskoch;Dev Universe</Authors>
+        <Company>Dev Universe</Company>
+        <Description>Default implementation of Pipelines.</Description>
+        <PackageProjectUrl>https://github.com/devuniverse0/Pipelines</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/devuniverse0/Pipelines</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>DevUniverse.Pipelines</PackageTags>
+        <Copyright>© Roman Doskoch, Dev Universe. All rights reserved.</Copyright>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DevUniverse.Pipelines.Core" Version="1.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    </ItemGroup>
+
+</Project>

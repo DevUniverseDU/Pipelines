@@ -1,0 +1,1 @@
+dotnet build "..\DevUniverse.Pipelines.sln" --configuration Release
