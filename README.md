@@ -2,9 +2,9 @@
 
 ## Overview
 
-This package allows to build pipelines step by step.
+This package allows building pipelines step by step.
 
-Every pipeline constists of some set of ordered steps and target. The target is the last (terminating) step of the pipeline.
+Every pipeline consists of some set of ordered steps and target. The target is the last (terminating) step of the pipeline.
 
 <br/>
 
