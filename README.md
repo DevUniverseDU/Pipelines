@@ -14,8 +14,7 @@ Every pipeline consists of some set of ordered steps and target. The target is t
 
 ## References
 
-  - [Documentation](DevUniverse.Pipelines/Docs/1.0.1/Pipelines.md)
-  - [Usage](DevUniverse.Pipelines/Docs/1.0.1/Usage.md)
+  - [Documentation & Usage](https://github.com/devuniverse0/Pipelines/tree/main/DevUniverse.Pipelines/Docs)
   - [Tools](https://github.com/devuniverse0/Pipelines/tree/main/DevUniverse.Pipelines/Docs/Tools)
   - [Scripts](https://github.com/devuniverse0/Pipelines/tree/main/DevUniverse.Pipelines/Scripts)
 

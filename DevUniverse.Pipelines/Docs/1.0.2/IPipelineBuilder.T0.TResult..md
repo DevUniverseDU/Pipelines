@@ -1,0 +1,280 @@
+#### [DevUniverse.Pipelines.Core](Pipelines.md 'Pipelines')
+### [DevUniverse.Pipelines.Core.Builders](Pipelines.md#DevUniverse.Pipelines.Core.Builders 'DevUniverse.Pipelines.Core.Builders')
+## IPipelineBuilder&lt;T0,TResult&gt; Interface
+The pipeline builder with 1 input parameter which returns the result.  
+```csharp
+public interface IPipelineBuilder<T0,TResult> :
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder
+```
+#### Type parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0'></a>
+`T0`  
+The type of the 1st parameter.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult'></a>
+`TResult`  
+The type of the result.
+  
+
+Implements [IPipelineBuilder](IPipelineBuilder.md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder')  
+### Properties
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Target'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.Target Property
+The target (terminating step) of the pipeline.  
+```csharp
+System.Func<T0,TResult> Target { get; }
+```
+#### Property Value
+[System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')
+  
+### Methods
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Build()'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.Build() Method
+Builds the pipeline.  
+```csharp
+System.Func<T0,TResult> Build();
+```
+#### Returns
+[System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The pipeline delegate which is the start of the pipeline.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.DevUniverse.Pipelines.Core.Steps.IPipelineStep.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.Use(Func&lt;IPipelineStep&lt;T0,TResult&gt;&gt;) Method
+Add the component from the pipeline step interface implementation.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> Use(System.Func<DevUniverse.Pipelines.Core.Steps.IPipelineStep<T0,TResult>> factory);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.DevUniverse.Pipelines.Core.Steps.IPipelineStep.T0.TResult..).factory'></a>
+`factory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1 'System.Func`1')[DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;](IPipelineStep.T0.TResult..md 'DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineStep.T0.TResult..md 'DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineStep.T0.TResult..md 'DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1 'System.Func`1')  
+The factory which provides the pipeline step instance.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.System.Func.T0.TResult..System.Func.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.Use(Func&lt;Func&lt;T0,TResult&gt;,Func&lt;T0,TResult&gt;&gt;) Method
+Adds the component.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> Use(System.Func<System.Func<T0,TResult>,System.Func<T0,TResult>> component);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.System.Func.T0.TResult..System.Func.T0.TResult..).component'></a>
+`component` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The component.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Steps.IPipelineStep.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.Use(Func&lt;IServiceProvider,IPipelineStep&lt;T0,TResult&gt;&gt;) Method
+Add the component from the pipeline step interface implementation.  
+Requires the service provider to be set.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> Use(System.Func<System.IServiceProvider,DevUniverse.Pipelines.Core.Steps.IPipelineStep<T0,TResult>> factory);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Steps.IPipelineStep.T0.TResult..).factory'></a>
+`factory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/System.IServiceProvider 'System.IServiceProvider')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;](IPipelineStep.T0.TResult..md 'DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineStep.T0.TResult..md 'DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineStep.T0.TResult..md 'DevUniverse.Pipelines.Core.Steps.IPipelineStep&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The factory which provides the pipeline step instance.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.T0.System.Func.T0.TResult..TResult.)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.Use(Func&lt;T0,Func&lt;T0,TResult&gt;,TResult&gt;) Method
+Adds the component created from the handler.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> Use(System.Func<T0,System.Func<T0,TResult>,TResult> handler);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use(System.Func.T0.System.Func.T0.TResult..TResult.).handler'></a>
+`handler` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3 'System.Func`3')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3 'System.Func`3')[System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3 'System.Func`3')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3 'System.Func`3')  
+The handler.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use.TPipelineStep.()'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.Use&lt;TPipelineStep&gt;() Method
+Add the component from the pipeline step interface implementation.  
+Requires the service provider to be set.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> Use<TPipelineStep>()
+    where TPipelineStep : DevUniverse.Pipelines.Core.Steps.IPipelineStep<T0, TResult>;
+```
+#### Type parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..Use.TPipelineStep.().TPipelineStep'></a>
+`TPipelineStep`  
+The type of the pipeline step.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.UseBranchIf(Func&lt;T0,bool&gt;, Action&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;, Func&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;) Method
+Adds the pipeline component to the pipeline.  
+If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.  
+If condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> UseBranchIf(System.Func<T0,bool> predicate, System.Action<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> configuration, System.Func<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> factory);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).predicate'></a>
+`predicate` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).configuration'></a>
+`configuration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).factory'></a>
+`factory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1 'System.Func`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1 'System.Func`1')  
+The factory which provides the branch builder instance.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.UseBranchIf(Func&lt;T0,bool&gt;, Action&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;, Func&lt;IServiceProvider,IPipelineBuilder&lt;T0,TResult&gt;&gt;) Method
+Adds the pipeline component to the pipeline.  
+If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.  
+If condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+Requires the service provider to be set.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> UseBranchIf(System.Func<T0,bool> predicate, System.Action<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> configuration, System.Func<System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> factory);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).predicate'></a>
+`predicate` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).configuration'></a>
+`configuration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).factory'></a>
+`factory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/System.IServiceProvider 'System.IServiceProvider')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The factory which provides the branch builder instance.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.UseBranchIf(Func&lt;T0,bool&gt;, Action&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;) Method
+Adds the pipeline component to the pipeline.  
+If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.  
+If condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+Requires the service provider to be set.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> UseBranchIf(System.Func<T0,bool> predicate, System.Action<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> configuration);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).predicate'></a>
+`predicate` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseBranchIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).configuration'></a>
+`configuration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.UseIf(Func&lt;T0,bool&gt;, Action&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;, Func&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;) Method
+Adds the pipeline component to the pipeline.  
+If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.  
+If condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> UseIf(System.Func<T0,bool> predicate, System.Action<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> configuration, System.Func<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> factory);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).predicate'></a>
+`predicate` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).configuration'></a>
+`configuration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).factory'></a>
+`factory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1 'System.Func`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1 'System.Func`1')  
+The factory which provides the branch builder instance.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.UseIf(Func&lt;T0,bool&gt;, Action&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;, Func&lt;IServiceProvider,IPipelineBuilder&lt;T0,TResult&gt;&gt;) Method
+Adds the pipeline component to the pipeline.  
+If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.  
+If condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+Requires the service provider to be set.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> UseIf(System.Func<T0,bool> predicate, System.Action<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> configuration, System.Func<System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> factory);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).predicate'></a>
+`predicate` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).configuration'></a>
+`configuration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult...System.Func.System.IServiceProvider.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).factory'></a>
+`factory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/System.IServiceProvider 'System.IServiceProvider')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The factory which provides the branch builder instance.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.UseIf(Func&lt;T0,bool&gt;, Action&lt;IPipelineBuilder&lt;T0,TResult&gt;&gt;) Method
+Adds the pipeline component to the pipeline.  
+If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.  
+If condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+Requires the service provider to be set.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> UseIf(System.Func<T0,bool> predicate, System.Action<DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult>> configuration);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).predicate'></a>
+`predicate` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.Boolean](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean 'System.Boolean')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseIf(System.Func.T0.bool..System.Action.DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..).configuration'></a>
+`configuration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseTarget(System.Func.T0.TResult.)'></a>
+## IPipelineBuilder&lt;T0,TResult&gt;.UseTarget(Func&lt;T0,TResult&gt;) Method
+Sets the pipeline target.  
+The target is the last (terminating) step of the pipeline.  
+```csharp
+DevUniverse.Pipelines.Core.Builders.IPipelineBuilder<T0,TResult> UseTarget(System.Func<T0,TResult> target);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..UseTarget(System.Func.T0.TResult.).target'></a>
+`target` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The target.
+  
+#### Returns
+[DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[T0](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..T0 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.T0')[,](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')[TResult](IPipelineBuilder.T0.TResult..md#DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.T0.TResult..TResult 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;.TResult')[&gt;](IPipelineBuilder.T0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;T0,TResult&gt;')  
+The current instance of the pipeline builder.
+  
