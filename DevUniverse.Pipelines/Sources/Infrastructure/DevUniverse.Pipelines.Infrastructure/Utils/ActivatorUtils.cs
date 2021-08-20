@@ -17,7 +17,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Utils
         /// <param name="type">The type of the instance.</param>
         /// <param name="constructorArgs">The constructor arguments.</param>
         /// <returns>The created instance.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static object Create(Type type, IEnumerable<object> constructorArgs = null)
         {
             if (type == null)

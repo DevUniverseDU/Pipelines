@@ -15,7 +15,7 @@ namespace DevUniverse.Pipelines.Infrastructure
         /// </summary>
         /// <param name="type">The type.</param>
         /// <returns>The error message.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static string CreateNoTargetSetErrorMessage(Type type)
         {
             if (type == null)
@@ -34,7 +34,7 @@ namespace DevUniverse.Pipelines.Infrastructure
         /// <param name="returnType">The return type.</param>
         /// <param name="parameterTypes">The parameter types.</param>
         /// <returns>The error message.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static string CreateCouldNotResolveMethod(Type type, string name, Type returnType, IEnumerable<Type> parameterTypes)
         {
             if (type == null)
@@ -61,7 +61,7 @@ namespace DevUniverse.Pipelines.Infrastructure
         /// </summary>
         /// <param name="type">The type.</param>
         /// <returns>The error message.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static string CreateInvalidPipelineStepTypeErrorMessage(Type type)
         {
             if (type == null)
@@ -77,7 +77,7 @@ namespace DevUniverse.Pipelines.Infrastructure
         /// </summary>
         /// <param name="type">The type.</param>
         /// <returns>The error message.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static string CreateNoServiceProviderErrorMessage(Type type)
         {
             if (type == null)

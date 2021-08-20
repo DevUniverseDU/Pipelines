@@ -17,7 +17,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Extensions
         /// <param name="name">The name to match.</param>
         /// <param name="stringComparison">The string comparison rule.</param>
         /// <returns>True in case of the match, otherwise false.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static bool MatchesByName(this MemberInfo memberInfo, string name, StringComparison stringComparison = StringComparison.Ordinal)
         {
             if (memberInfo == null)
@@ -40,7 +40,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Extensions
         /// <param name="returnType">The return type to check.</param>
         /// <param name="invariantOnly">Indicates if the only variant types should be matched.</param>
         /// <returns>True in case of the match, otherwise false.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static bool MatchesByReturnType(this MethodInfo methodInfo, Type returnType, bool invariantOnly = false)
         {
             if (methodInfo == null)
@@ -64,7 +64,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Extensions
         /// <param name="parameterTypes">The parameters types.</param>
         /// <param name="invariantOnly">Indicates if the only variant types should be matched.</param>
         /// <returns>True in case of the match, otherwise false.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static bool MatchesByParameterTypes(this MethodBase methodBase, List<Type> parameterTypes = null, bool invariantOnly = false)
         {
             if (methodBase == null)

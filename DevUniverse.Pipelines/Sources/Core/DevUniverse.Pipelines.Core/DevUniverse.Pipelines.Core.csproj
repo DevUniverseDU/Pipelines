@@ -3,12 +3,11 @@
     <PropertyGroup>
         <TargetFrameworks>net5.0;netstandard2.0;netstandard2.1</TargetFrameworks>
         <LangVersion>default</LangVersion>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
 
         <IsPackable>true</IsPackable>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <PackageId>DevUniverse.Pipelines.Core</PackageId>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <Title>DevUniverse.Pipelines.Core</Title>
         <Authors>Roman Doskoch;Dev Universe</Authors>
         <Company>Dev Universe</Company>
@@ -18,15 +17,22 @@
         <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>DevUniverse.Pipelines.Core;DevUniverse.Pipelines</PackageTags>
+        <PackageReadmeFile>Nuget Readme.md</PackageReadmeFile>
         <Copyright>© Roman Doskoch, Dev Universe. All rights reserved.</Copyright>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net5.0|AnyCPU'">
-      <DocumentationFile>DevUniverse.Pipelines.Core.xml</DocumentationFile>
+        <DocumentationFile>DevUniverse.Pipelines.Core.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <None Remove="DevUniverse.Pipelines.Core.xml" />
+        <None Remove="DevUniverse.Pipelines.Core.xml"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\..\Docs\Nuget Readme.md" Pack="true" PackagePath="\">
+            <Link>Nuget Readme.md</Link>
+        </None>
     </ItemGroup>
 
 </Project>

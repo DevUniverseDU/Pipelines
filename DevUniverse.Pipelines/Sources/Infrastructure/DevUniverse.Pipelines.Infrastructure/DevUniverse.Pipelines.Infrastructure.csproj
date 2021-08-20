@@ -7,7 +7,7 @@
         <IsPackable>true</IsPackable>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <PackageId>DevUniverse.Pipelines</PackageId>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <Title>DevUniverse.Pipelines</Title>
         <Authors>Roman Doskoch;Dev Universe</Authors>
         <Company>Dev Universe</Company>
@@ -17,12 +17,18 @@
         <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>DevUniverse.Pipelines</PackageTags>
+        <PackageReadmeFile>Nuget Readme.md</PackageReadmeFile>
         <Copyright>© Roman Doskoch, Dev Universe. All rights reserved.</Copyright>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="DevUniverse.Pipelines.Core" Version="1.0.0" />
+        <PackageReference Include="DevUniverse.Pipelines.Core" Version="1.0.1" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Include="..\..\..\Docs\Nuget Readme.md" Pack="true" PackagePath="\">
+            <Link>Nuget Readme.md</Link>
+        </None>
+    </ItemGroup>
 </Project>
