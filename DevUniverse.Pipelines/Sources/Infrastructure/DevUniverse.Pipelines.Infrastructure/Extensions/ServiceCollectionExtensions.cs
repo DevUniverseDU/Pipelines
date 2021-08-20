@@ -17,7 +17,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Extensions
         /// </summary>
         /// <param name="serviceCollection">The service collection.</param>
         /// <returns>The current instance of the <see cref="IServiceCollection"/>.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         public static IServiceCollection AddPipelines(this IServiceCollection serviceCollection)
         {
             if (serviceCollection == null)

@@ -82,7 +82,7 @@ Every pipeline executes steps in the order these steps were added to the pipelin
 
 ### `Use` component
 
-A component is the delegate which accepts one parameter (which is the next step of the pipeline) and returns the delegate containing the actuall step logic.
+A component is the delegate which accepts one parameter (which is the next step of the pipeline) and returns the delegate containing the actual step logic.
 
 `Use` method can be used to add pipeline step using the component:
 
@@ -108,7 +108,7 @@ pipelineBuilder.Use
 
 ### `Use` handler
 
-A handler can be used to add simple pipeline step. The code is simpler a little bit in comparison with using component (internally this method uses `Use` passing the component).
+A handler can be used to add simple pipeline step. The code is simpler in comparison with using component (internally this method uses `Use` passing the component).
 
 Under the hood this a component is created from this handler.
 
@@ -241,7 +241,7 @@ In case the condition is NOT met these branch steps are skipped and next step in
 
 <br/>
 
-Branch pipeline can be configured using the configureation delegate.
+Branch pipeline can be configured using the configuration delegate.
 
 <br />
 
@@ -285,13 +285,13 @@ pipelineBuilder
 
 `UseBranchIf` is used to create new branches of the pipeline with conditional steps and execute these branch steps only when condition is met. The branch is NOT rejoined to main pipeline. Every branch should have own `Target` set;
 
-If condition is met the branch steps are executed. This branch is not rejoined to the main pipeline so steps in main pipeline won't be executed. 
+If condition is met the branch steps are executed. This branch is not rejoined to the main pipeline, so steps in main pipeline won't be executed. 
 
 In case the condition is not met the step is skipped and next step in pipeline is executed. The `ServiceProvider` and `IPipelineBuilderFactory` are used to get instance of branch pipeline builder.
 
 <br/>
 
-Branch pipeline can be configured using the configureation delegate.
+Branch pipeline can be configured using the configuration delegate.
 
 The `Target` should be set for branch pipeline.
 

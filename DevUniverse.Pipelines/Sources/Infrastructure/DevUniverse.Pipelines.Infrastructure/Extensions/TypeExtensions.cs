@@ -21,7 +21,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Extensions
         /// <param name="invariantOnly">Indicates if the only variant types should be matched.</param>
         /// <param name="bindingFlags">The binding flags.</param>
         /// <returns>The method info.</returns>
-        /// <exception cref="ArgumentNullException">The exception when the some of the arguments are null.</exception>
+        /// <exception cref="ArgumentNullException">The exception when the some arguments are null.</exception>
         /// <exception cref="MissingMethodException">The exception when the method is not found.</exception>
         public static MethodInfo ResolveMethod
         (
