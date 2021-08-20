@@ -2,7 +2,7 @@
 
 ## Overview
 
-These packages allow building pipelines step by step.
+These package allow building pipelines step by step.
 
 Every pipeline consists of some set of ordered steps and target. The target is the last (terminating) step of the pipeline.
 
@@ -14,8 +14,8 @@ Every pipeline consists of some set of ordered steps and target. The target is t
 
 ## References
 
-  - [Documentation](DevUniverse.Pipelines/Docs/1.0.1/Pipelines.md)
-  - [Usage](DevUniverse.Pipelines/Docs/1.0.1/Usage.md)
+  - [Documentation](https://github.com/devuniverse0/Pipelines/blob/main/DevUniverse.Pipelines/Docs/1.0.1/Pipelines.md)
+  - [Usage](https://github.com/devuniverse0/Pipelines/blob/main/DevUniverse.Pipelines/Docs/1.0.1/Usage.md)
   - [Tools](https://github.com/devuniverse0/Pipelines/tree/main/DevUniverse.Pipelines/Docs/Tools)
   - [Scripts](https://github.com/devuniverse0/Pipelines/tree/main/DevUniverse.Pipelines/Scripts)
 
