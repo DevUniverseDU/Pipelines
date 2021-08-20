@@ -7,7 +7,7 @@
         <IsPackable>true</IsPackable>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <PackageId>DevUniverse.Pipelines.Core</PackageId>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
         <Title>DevUniverse.Pipelines.Core</Title>
         <Authors>Roman Doskoch;Dev Universe</Authors>
         <Company>Dev Universe</Company>
