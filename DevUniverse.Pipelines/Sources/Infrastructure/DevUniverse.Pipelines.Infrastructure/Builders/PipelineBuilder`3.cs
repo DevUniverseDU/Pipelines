@@ -121,6 +121,12 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders
 
         #endregion UseTarget
 
+        #region Copy
+
+        public IPipelineBuilder<T0, T1, TResult> Copy() => this.Copy<IPipelineBuilder<T0, T1, TResult>>();
+
+        #endregion Copy
+
         #endregion Methods
     }
 }
