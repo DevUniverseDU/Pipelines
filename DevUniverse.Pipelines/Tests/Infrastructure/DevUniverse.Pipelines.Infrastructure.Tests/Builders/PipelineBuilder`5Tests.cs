@@ -696,6 +696,82 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.Builders
 
         #endregion Build
 
+        #region Copy
+
+        public static TheoryData<bool> CopyTestData => new TheoryData<bool>()
+        {
+            { true },
+            { false }
+        };
+
+        [Theory]
+        [MemberData(nameof(CopyTestData))]
+        public async Task Copy_CopiesPipelineBuilder(bool setTargetBeforeCopying)
+        {
+            var expectedResultSourcePipeline = PipelineBuilder5Tests.TargetMainResult * PipelineBuilder5Tests.TargetMainResult;
+
+            var expectedResultPipelineCopy = PipelineBuilder5Tests.TargetMainResult *
+                                             PipelineBuilder5Tests.TargetMainResult *
+                                             PipelineBuilder5Tests.TargetMainResult *
+                                             PipelineBuilder5Tests.TargetMainResult;
+
+            var serviceProvider = PipelineBuilder5Tests.ServiceCollection
+                .AddTransient<SquareStep5>()
+                .BuildServiceProvider();
+
+            var sourcePipelineBuilder = this.CreateSut(serviceProvider)
+                .Use<SquareStep5>();
+
+            if (setTargetBeforeCopying)
+            {
+                sourcePipelineBuilder.UseTarget(PipelineBuilder5Tests.TargetMain);
+            }
+
+            var pipelineBuilderCopy = sourcePipelineBuilder
+                .Copy()
+                .Use<SquareStep5>();
+
+
+            if (!setTargetBeforeCopying)
+            {
+                sourcePipelineBuilder.UseTarget(PipelineBuilder5Tests.TargetMain);
+                pipelineBuilderCopy.UseTarget(PipelineBuilder5Tests.TargetMain);
+            }
+
+
+            var sourcePipeline = sourcePipelineBuilder.Build();
+
+            var actualResultSourcePipeline = await sourcePipeline.Invoke
+            (
+                PipelineBuilder5Tests.Arg0,
+                PipelineBuilder5Tests.Arg1,
+                PipelineBuilder5Tests.Arg2,
+                PipelineBuilder5Tests.Arg3
+            );
+
+
+            var pipelineCopy = pipelineBuilderCopy.Build();
+
+            var actualPipelineCopyResult = await pipelineCopy.Invoke
+            (
+                PipelineBuilder5Tests.Arg0,
+                PipelineBuilder5Tests.Arg1,
+                PipelineBuilder5Tests.Arg2,
+                PipelineBuilder5Tests.Arg3
+            );
+
+            Assert.Equal(pipelineBuilderCopy.ServiceProvider, sourcePipelineBuilder.ServiceProvider);
+            Assert.True(Object.ReferenceEquals(pipelineBuilderCopy.ServiceProvider, sourcePipelineBuilder.ServiceProvider));
+
+            Assert.Equal(pipelineBuilderCopy.Target, sourcePipelineBuilder.Target);
+            Assert.False(Object.ReferenceEquals(pipelineBuilderCopy.Target, sourcePipelineBuilder.Target));
+
+            Assert.Equal(expectedResultSourcePipeline, actualResultSourcePipeline);
+            Assert.Equal(expectedResultPipelineCopy, actualPipelineCopyResult);
+        }
+
+        #endregion Copy
+
         #region CreateSut
 
         private IPipelineBuilder<int, int, int, int, Task<int>> CreateSut(IServiceProvider serviceProvider = null) =>
