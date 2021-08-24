@@ -197,6 +197,16 @@ namespace DevUniverse.Pipelines.Core.Builders
 
         #endregion Build
 
+        #region Copy
+
+        /// <summary>
+        /// Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
+        /// </summary>
+        /// <returns>The new instance of the pipeline builder.</returns>
+        public IPipelineBuilder<T0, TResult> Copy();
+
+        #endregion Copy
+
         #endregion Methods
     }
 }

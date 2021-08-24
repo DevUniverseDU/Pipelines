@@ -12,7 +12,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders.Base
     {
         #region Properties
 
-        protected List<Func<TDelegate, TDelegate>> Components { get; } = new List<Func<TDelegate, TDelegate>>();
+        protected List<Func<TDelegate, TDelegate>> Components { get; set; } = new List<Func<TDelegate, TDelegate>>();
         public TDelegate Target { get; protected set; }
 
         public IServiceProvider ServiceProvider { get; }
@@ -38,7 +38,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders.Base
 
             this.Components.Add(component);
 
-            return (TResult) (object) this;
+            return (TResult)(object)this;
         }
 
         #endregion UseComponent
@@ -65,7 +65,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders.Base
         {
             this.Target = target ?? throw new ArgumentNullException(nameof(target));
 
-            return (TResult) (object) this;
+            return (TResult)(object)this;
         }
 
         #endregion UseTargetItem
@@ -116,13 +116,30 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders.Base
                 var expressionHandlerInvoke = Expression.Invoke(Expression.Constant(handler), resultDelegateParameters);
                 var resultDelegate = Expression.Lambda(delegateType, expressionHandlerInvoke, expressionParameters).Compile();
 
-                return (TDelegate) resultDelegate;
+                return (TDelegate)resultDelegate;
             };
 
             return component;
         }
 
         #endregion CreateComponentFromHandler
+
+        #region Copy
+
+        protected TResult Copy<TResult>()
+        {
+            var copiedInstance = (PipelineBuilderBase<TDelegate>)this.MemberwiseClone();
+            copiedInstance.Components = this.Components.Select(item => (Func<TDelegate, TDelegate>)item.Clone()).ToList();
+
+            if (this.Target != null)
+            {
+                copiedInstance.Target = (TDelegate)this.Target.Clone();
+            }
+
+            return (TResult)(object)copiedInstance;
+        }
+
+        #endregion Copy
 
         #endregion Methods
     }

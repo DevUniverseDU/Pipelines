@@ -266,6 +266,12 @@
             </summary>
             <returns>The pipeline delegate which is the start of the pipeline.</returns>
         </member>
+        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Copy">
+            <summary>
+            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
+            </summary>
+            <returns>The new instance of the pipeline builder.</returns>
+        </member>
         <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2">
             <summary>
             The pipeline builder with 1 input parameter which returns the result.
@@ -396,6 +402,12 @@
             Builds the pipeline.
             </summary>
             <returns>The pipeline delegate which is the start of the pipeline.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Copy">
+            <summary>
+            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
+            </summary>
+            <returns>The new instance of the pipeline builder.</returns>
         </member>
         <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3">
             <summary>
@@ -528,6 +540,12 @@
             Builds the pipeline.
             </summary>
             <returns>The pipeline delegate which is the start of the pipeline.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Copy">
+            <summary>
+            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
+            </summary>
+            <returns>The new instance of the pipeline builder.</returns>
         </member>
         <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4">
             <summary>
@@ -662,6 +680,12 @@
             </summary>
             <returns>The pipeline delegate which is the start of the pipeline.</returns>
         </member>
+        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Copy">
+            <summary>
+            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
+            </summary>
+            <returns>The new instance of the pipeline builder.</returns>
+        </member>
         <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5">
             <summary>
             The pipeline builder with 4 input parameters which returns the result.
@@ -795,6 +819,12 @@
             Builds the pipeline.
             </summary>
             <returns>The pipeline delegate which is the start of the pipeline.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Copy">
+            <summary>
+            Creates the new instance of the pipeline builder with same configuration (components/steps, target, service provider) as the current instance.
+            </summary>
+            <returns>The new instance of the pipeline builder.</returns>
         </member>
         <member name="T:DevUniverse.Pipelines.Core.Steps.IPipelineStep">
             <summary>
