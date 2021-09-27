@@ -1,0 +1,24 @@
+﻿using DevUniverse.Pipelines.Core.Shared.Conditions;
+
+namespace DevUniverse.Pipelines.Core.Conditions
+{
+    /// <summary>
+    /// The pipeline condition with 4 parameters.
+    /// </summary>
+    /// <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+    /// <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+    /// <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+    /// <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
+    public interface IPipelineCondition<in TParam0, in TParam1, in TParam2, in TParam3> : IPipelineConditionBasic
+    {
+        /// <summary>
+        /// Executes the logic of the condition.
+        /// </summary>
+        /// <param name="param0">The 1st parameter.</param>
+        /// <param name="param1">The 2nd parameter.</param>
+        /// <param name="param2">The 3rd parameter.</param>
+        /// <param name="param3">The 4th parameter.</param>
+        /// <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        public bool Invoke(TParam0 param0, TParam1 param1, TParam2 param2, TParam3 param3);
+    }
+}

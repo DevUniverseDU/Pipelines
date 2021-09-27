@@ -1,2 +1,3 @@
-dotnet pack "..\..\Sources\Core\DevUniverse.Pipelines.Core\DevUniverse.Pipelines.Core.csproj" --configuration Release --output "..\..\Local/Nuget"
+@echo off
 
+dotnet pack "..\..\Sources\Core\DevUniverse.Pipelines.Core\DevUniverse.Pipelines.Core.csproj" --configuration Release --output "..\..\Local\Nuget"
