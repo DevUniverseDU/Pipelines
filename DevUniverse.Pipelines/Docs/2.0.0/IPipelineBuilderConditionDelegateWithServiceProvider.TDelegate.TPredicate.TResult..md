@@ -1,0 +1,94 @@
+#### [DevUniverse.Pipelines.Core](Pipelines.md 'Pipelines')
+### [DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate](Pipelines.md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate')
+## IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt; Interface
+The pipeline builder with the possibility to add the pipeline step conditionally.  
+```csharp
+public interface IPipelineBuilderConditionDelegateWithServiceProvider<TDelegate,in TPredicate,TResult> :
+DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderWithServiceProvider<TDelegate, TResult>,
+DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore<TDelegate, TResult>,
+DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderBasic
+    where TDelegate : System.Delegate
+    where TPredicate : System.Delegate
+    where TResult : DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider<TDelegate, TPredicate, TResult>
+```
+#### Type parameters
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TDelegate'></a>
+`TDelegate`  
+The delegate type.
+  
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TPredicate'></a>
+`TPredicate`  
+The predicate type.
+  
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult'></a>
+`TResult`  
+The result pipeline builder type.
+  
+
+Derived  
+&#8627; [IPipelineBuilder&lt;TParam0,TParam1,TParam2,TParam3,TResult&gt;](IPipelineBuilder.TParam0.TParam1.TParam2.TParam3.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;TParam0,TParam1,TParam2,TParam3,TResult&gt;')  
+&#8627; [IPipelineBuilder&lt;TParam0,TParam1,TParam2,TResult&gt;](IPipelineBuilder.TParam0.TParam1.TParam2.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;TParam0,TParam1,TParam2,TResult&gt;')  
+&#8627; [IPipelineBuilder&lt;TParam0,TParam1,TResult&gt;](IPipelineBuilder.TParam0.TParam1.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;TParam0,TParam1,TResult&gt;')  
+&#8627; [IPipelineBuilder&lt;TParam0,TResult&gt;](IPipelineBuilder.TParam0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;TParam0,TResult&gt;')  
+&#8627; [IPipelineBuilder&lt;TResult&gt;](IPipelineBuilder.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilder&lt;TResult&gt;')  
+&#8627; [IPipelineBuilderAsync&lt;TParam0,TParam1,TParam2,TParam3,TResult&gt;](IPipelineBuilderAsync.TParam0.TParam1.TParam2.TParam3.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync&lt;TParam0,TParam1,TParam2,TParam3,TResult&gt;')  
+&#8627; [IPipelineBuilderAsync&lt;TParam0,TParam1,TParam2,TResult&gt;](IPipelineBuilderAsync.TParam0.TParam1.TParam2.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync&lt;TParam0,TParam1,TParam2,TResult&gt;')  
+&#8627; [IPipelineBuilderAsync&lt;TParam0,TParam1,TResult&gt;](IPipelineBuilderAsync.TParam0.TParam1.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync&lt;TParam0,TParam1,TResult&gt;')  
+&#8627; [IPipelineBuilderAsync&lt;TParam0,TResult&gt;](IPipelineBuilderAsync.TParam0.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync&lt;TParam0,TResult&gt;')  
+&#8627; [IPipelineBuilderAsync&lt;TResult&gt;](IPipelineBuilderAsync.TResult..md 'DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync&lt;TResult&gt;')  
+&#8627; [IPipelineBuilderFull&lt;TDelegate,TPipelineStep,TPredicate,TPipelineCondition,TResult&gt;](IPipelineBuilderFull.TDelegate.TPipelineStep.TPredicate.TPipelineCondition.TResult..md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderFull&lt;TDelegate,TPipelineStep,TPredicate,TPipelineCondition,TResult&gt;')  
+
+Implements [DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderWithServiceProvider&lt;](IPipelineBuilderWithServiceProvider.TDelegate.TResult..md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderWithServiceProvider&lt;TDelegate,TResult&gt;')[TDelegate](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TDelegate 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TDelegate')[,](IPipelineBuilderWithServiceProvider.TDelegate.TResult..md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderWithServiceProvider&lt;TDelegate,TResult&gt;')[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')[&gt;](IPipelineBuilderWithServiceProvider.TDelegate.TResult..md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderWithServiceProvider&lt;TDelegate,TResult&gt;'), [DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore&lt;](IPipelineBuilderCore.TDelegate.TResult..md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore&lt;TDelegate,TResult&gt;')[TDelegate](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TDelegate 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TDelegate')[,](IPipelineBuilderCore.TDelegate.TResult..md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore&lt;TDelegate,TResult&gt;')[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')[&gt;](IPipelineBuilderCore.TDelegate.TResult..md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore&lt;TDelegate,TResult&gt;'), [IPipelineBuilderBasic](IPipelineBuilderBasic.md 'DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderBasic')  
+### Methods
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseBranchIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..)'></a>
+## IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.UseBranchIf(TPredicate, Action&lt;TResult&gt;, Func&lt;IServiceProvider,TResult&gt;?) Method
+Adds the pipeline component to the pipeline.  
+If the condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.  
+If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+Requires the service provider to be set.  
+```csharp
+TResult UseBranchIf(TPredicate predicate, System.Action<TResult> branchBuilderConfiguration, System.Func<System.IServiceProvider,TResult>? branchBuilderFactory=null);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseBranchIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..).predicate'></a>
+`predicate` [TPredicate](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TPredicate 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TPredicate')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseBranchIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..).branchBuilderConfiguration'></a>
+`branchBuilderConfiguration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseBranchIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..).branchBuilderFactory'></a>
+`branchBuilderFactory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/System.IServiceProvider 'System.IServiceProvider')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The factory which provides the branch builder instance.
+  
+#### Returns
+[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')  
+The current instance of the pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..)'></a>
+## IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.UseIf(TPredicate, Action&lt;TResult&gt;, Func&lt;IServiceProvider,TResult&gt;?) Method
+Adds the pipeline component to the pipeline.  
+If the condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.  
+If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.  
+Requires the service provider to be set.  
+```csharp
+TResult UseIf(TPredicate predicate, System.Action<TResult> branchBuilderConfiguration, System.Func<System.IServiceProvider,TResult>? branchBuilderFactory=null);
+```
+#### Parameters
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..).predicate'></a>
+`predicate` [TPredicate](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TPredicate 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TPredicate')  
+The predicate which determines if the added pipeline component should be executed.
+  
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..).branchBuilderConfiguration'></a>
+`branchBuilderConfiguration` [System.Action&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1 'System.Action`1')  
+The configuration of the branch pipeline builder.
+  
+<a name='DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..UseIf(TPredicate.System.Action.TResult..System.Func.System.IServiceProvider.TResult..).branchBuilderFactory'></a>
+`branchBuilderFactory` [System.Func&lt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[System.IServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/System.IServiceProvider 'System.IServiceProvider')[,](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')[&gt;](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2 'System.Func`2')  
+The factory which provides the branch builder instance.
+  
+#### Returns
+[TResult](IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..md#DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider.TDelegate.TPredicate.TResult..TResult 'DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider&lt;TDelegate,TPredicate,TResult&gt;.TResult')  
+The current instance of the pipeline builder.
+  

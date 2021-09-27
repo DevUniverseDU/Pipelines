@@ -1,3 +1,0 @@
-dotnet test "..\DevUniverse.Pipelines.sln" --framework net5.0 --configuration Release --logger "trx;LogFileName=TestResults.trx" --logger "html;LogFileName=TestResults.html" --logger "console;verbosity=normal" --results-directory "..\Local\Tests" --verbosity minimal "/p:CollectCoverage=true" "/p:CoverletOutput=\"..\..\..\Local\Tests\TestCoverageResults/\"" "/p:MergeWith=\"..\..\..\Local\Tests\TestCoverageResults\coverlet.json\"" "/p:CoverletOutputFormat=\"json,cobertura\""
-
-reportgenerator -reports:"..\Local\Tests\TestCoverageResults\*.xml" -targetdir:"..\Local\Tests\TestCoverageResults\Reports" -reporttypes:"Html"

@@ -6,7 +6,7 @@ To install dotnet tool for documentation generation open command line and run th
 
 <br />
 
-To generate documentation use this [script](../../Scripts/Docs%20Generate.bat).
+To generate documentation use this [script](../../Scripts/Docs/Docs%20Generate.bat).
 
 <br/>
 

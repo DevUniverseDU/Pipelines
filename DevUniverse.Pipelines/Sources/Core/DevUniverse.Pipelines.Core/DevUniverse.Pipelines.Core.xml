@@ -4,6 +4,112 @@
         <name>DevUniverse.Pipelines.Core</name>
     </assembly>
     <members>
+        <member name="T:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory">
+            <summary>
+            The pipeline builder factory.
+            Creates the new instances of the pipeline builders.
+            </summary>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``1(System.Object[])">
+            <summary>
+            Creates the pipeline builder without the parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`1"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``1(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Creates the pipeline builder without the parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`1"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``2(System.Object[])">
+            <summary>
+            Creates the pipeline builder with 1 parameter which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`2"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``2(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Creates the pipeline builder with 1 parameter which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`2"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``3(System.Object[])">
+            <summary>
+            Creates the pipeline builder with 2 parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`3"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``3(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Creates the pipeline builder with 2 parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`3"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``4(System.Object[])">
+            <summary>
+            Creates the pipeline builder with 3 parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`4"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``4(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Creates the pipeline builder with 3 parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`4"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``5(System.Object[])">
+            <summary>
+            Creates the pipeline builder with 4 parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`5"/>.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderAsyncFactory.Create``5(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Creates the pipeline builder with 4 parameters which returns the result.
+            </summary>
+            <param name="constructorArgs">The constructor arguments.</param>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
+            <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
+            <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`5"/>.</returns>
+        </member>
         <member name="T:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory">
             <summary>
             The pipeline builder factory.
@@ -12,7 +118,7 @@
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``1(System.Object[])">
             <summary>
-            Creates the pipeline builder without input parameters which returns the result.
+            Creates the pipeline builder without the parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
@@ -20,7 +126,7 @@
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``1(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
-            Creates the pipeline builder without input parameters which returns the result.
+            Creates the pipeline builder without the parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
@@ -28,89 +134,334 @@
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``2(System.Object[])">
             <summary>
-            Creates the pipeline builder with 1 input parameter which returns the result.
+            Creates the pipeline builder with 1 parameter which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the parameter.</typeparam>
+            <typeparam name="TParam0">The type of the parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2"/>.</returns>
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``2(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
-            Creates the pipeline builder with 1 input parameter which returns the result.
+            Creates the pipeline builder with 1 parameter which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the parameter.</typeparam>
+            <typeparam name="TParam0">The type of the parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2"/>.</returns>
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``3(System.Object[])">
             <summary>
-            Creates the pipeline builder with 2 input parameters which returns the result.
+            Creates the pipeline builder with 2 parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3"/>.</returns>
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``3(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
-            Creates the pipeline builder with 2 input parameters which returns the result.
+            Creates the pipeline builder with 2 parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3"/>.</returns>
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``4(System.Object[])">
             <summary>
-            Creates the pipeline builder with 3 input parameters which returns the result.
+            Creates the pipeline builder with 3 parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4"/>.</returns>
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``4(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
-            Creates the pipeline builder with 3 input parameters which returns the result.
+            Creates the pipeline builder with 3 parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4"/>.</returns>
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``5(System.Object[])">
             <summary>
-            Creates the pipeline builder with 4 input parameters which returns the result.
+            Creates the pipeline builder with 4 parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
-            <typeparam name="T3">The type of the 4th parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5"/>.</returns>
         </member>
         <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create``5(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
-            Creates the pipeline builder with 4 input parameters which returns the result.
+            Creates the pipeline builder with 4 parameters which returns the result.
             </summary>
             <param name="constructorArgs">The constructor arguments.</param>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
-            <typeparam name="T3">The type of the 4th parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
             <typeparam name="TResult">The return type of the pipeline builder.</typeparam>
             <returns>The new instance of the <see cref="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5"/>.</returns>
         </member>
-        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create(System.Type,System.Object[])">
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1">
+            <summary>
+            The pipeline builder with no parameters which returns the result.
+            </summary>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2">
+            <summary>
+            The pipeline builder with 1 parameter which returns the result.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3">
+            <summary>
+            The pipeline builder with 2 parameters which returns the result.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4">
+            <summary>
+            The pipeline builder with 3 parameters which returns the result.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5">
+            <summary>
+            The pipeline builder with 4 parameters which returns the result.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync">
+            <summary>
+            The basic async pipeline builder.
+            </summary>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`1">
+            <summary>
+            The pipeline builder with no parameters which returns the result asynchronously.
+            </summary>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`2">
+            <summary>
+            The pipeline builder with 1 parameter which returns the result asynchronously.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`3">
+            <summary>
+            The pipeline builder with 2 parameters which returns the result asynchronously.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`4">
+            <summary>
+            The pipeline builder with 3 parameters which returns the result asynchronously.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilderAsync`5">
+            <summary>
+            The pipeline builder with 4 parameters which returns the result asynchronously.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition">
+            <summary>
+            The pipeline condition with no parameters.
+            </summary>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition.Invoke">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`1">
+            <summary>
+            The pipeline condition with 1 parameter.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`1.Invoke(`0)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`2">
+            <summary>
+            The pipeline condition with 2 parameters.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`2.Invoke(`0,`1)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <param name="param1">The 2nd parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`3">
+            <summary>
+            The pipeline condition with 3 parameters.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`3.Invoke(`0,`1,`2)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <param name="param1">The 2nd parameter.</param>
+            <param name="param2">The 3rd parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`4">
+            <summary>
+            The pipeline condition with 4 parameters.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineCondition`4.Invoke(`0,`1,`2,`3)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <param name="param1">The 2nd parameter.</param>
+            <param name="param2">The 3rd parameter.</param>
+            <param name="param3">The 4th parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync">
+            <summary>
+            The async pipeline condition with no parameters.
+            </summary>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync.InvokeAsync">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`1">
+            <summary>
+            The async pipeline condition with 1 parameter.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`1.InvokeAsync(`0)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`2">
+            <summary>
+            The async pipeline condition with 2 parameters.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`2.InvokeAsync(`0,`1)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <param name="param1">The 2nd parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`3">
+            <summary>
+            The async pipeline condition with 3 parameters.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`3.InvokeAsync(`0,`1,`2)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <param name="param1">The 2nd parameter.</param>
+            <param name="param2">The 3rd parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`4">
+            <summary>
+            The async pipeline condition with 4 parameters.
+            </summary>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsync`4.InvokeAsync(`0,`1,`2,`3)">
+            <summary>
+            Executes the logic of the condition.
+            </summary>
+            <param name="param0">The 1st parameter.</param>
+            <param name="param1">The 2nd parameter.</param>
+            <param name="param2">The 3rd parameter.</param>
+            <param name="param3">The 4th parameter.</param>
+            <returns><see langword="true"/> if the condition is met, otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Conditions.IPipelineConditionAsyncBasic">
+            <summary>
+            The basic async pipeline condition.
+            </summary>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.BuilderFactories.IPipelineBuilderFactoryBasic">
+            <summary>
+            The basic pipeline builder factory.
+            </summary>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.BuilderFactories.IPipelineBuilderFactoryBasic.Create(System.Type,System.Object[])">
             <summary>
             Creates the pipeline builder of the specified type using the type variable.
             </summary>
@@ -118,7 +469,7 @@
             <param name="constructorArgs">The constructor arguments.</param>
             <returns>The new instance of the pipeline builder.</returns>
         </member>
-        <member name="M:DevUniverse.Pipelines.Core.BuilderFactories.IPipelineBuilderFactory.Create(System.Type,System.Collections.Generic.IEnumerable{System.Object})">
+        <member name="M:DevUniverse.Pipelines.Core.Shared.BuilderFactories.IPipelineBuilderFactoryBasic.Create(System.Type,System.Collections.Generic.IEnumerable{System.Object})">
             <summary>
             Creates the pipeline builder of the specified type using the type variable.
             </summary>
@@ -126,732 +477,260 @@
             <param name="constructorArgs">The constructor arguments.</param>
             <returns>The new instance of the pipeline builder.</returns>
         </member>
-        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder">
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegate`3">
+            <summary>
+            The pipeline builder with the possibility to add the pipeline step conditionally.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TPredicate">The predicate type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegate`3.UseIf(`1,System.Action{`2},System.Func{`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            </summary>
+            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegate`3.UseBranchIf(`1,System.Action{`2},System.Func{`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            </summary>
+            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider`3">
+            <summary>
+            The pipeline builder with the possibility to add the pipeline step conditionally.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TPredicate">The predicate type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider`3.UseIf(`1,System.Action{`2},System.Func{System.IServiceProvider,`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            Requires the service provider to be set.
+            </summary>
+            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionDelegate.IPipelineBuilderConditionDelegateWithServiceProvider`3.UseBranchIf(`1,System.Action{`2},System.Func{System.IServiceProvider,`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            Requires the service provider to be set.
+            </summary>
+            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionInterface.IPipelineBuilderConditionInterface`3">
+            <summary>
+            The pipeline builder with the possibility to add the pipeline step conditionally.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TCondition">The condition type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionInterface.IPipelineBuilderConditionInterface`3.UseIf(System.Func{`1},System.Action{`2},System.Func{`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            </summary>
+            <param name="conditionFactory">The condition factory which provides the condition instance.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionInterface.IPipelineBuilderConditionInterface`3.UseBranchIf(System.Func{`1},System.Action{`2},System.Func{`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            </summary>
+            <param name="conditionFactory">The condition factory which provides the condition instance.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionInterface.IPipelineBuilderConditionInterfaceWithServiceProvider`3">
+            <summary>
+            The pipeline builder with the possibility to add the pipeline step conditionally.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TCondition">The condition type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionInterface.IPipelineBuilderConditionInterfaceWithServiceProvider`3.UseIf``1(System.Func{System.IServiceProvider,``0},System.Action{`2},System.Func{System.IServiceProvider,`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            </summary>
+            <param name="conditionFactory">The condition factory which provides the condition instance. Set to null if standard logic should be used to get condition instance.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <typeparam name="TCustomCondition">The condition type.</typeparam>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.Condition.ConditionInterface.IPipelineBuilderConditionInterfaceWithServiceProvider`3.UseBranchIf``1(System.Func{System.IServiceProvider,``0},System.Action{`2},System.Func{System.IServiceProvider,`2})">
+            <summary>
+            Adds the pipeline component to the pipeline.
+            If the condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
+            If the condition is NOT met the configuration is just skipped and next step of the main branch is executed.
+            </summary>
+            <param name="conditionFactory">The condition factory which provides the condition instance. Set to null if standard logic should be used to get condition instance.</param>
+            <param name="branchBuilderConfiguration">The configuration of the branch pipeline builder.</param>
+            <param name="branchBuilderFactory">The factory which provides the branch builder instance.</param>
+            <typeparam name="TCustomCondition">The condition type.</typeparam>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderBasic">
             <summary>
             The basic pipeline builder.
             </summary>
         </member>
-        <member name="P:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder.ServiceProvider">
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore`2">
+            <summary>
+            The core pipeline builder.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="P:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore`2.Components">
+            <summary>
+            The pipeline builder component.
+            </summary>
+        </member>
+        <member name="P:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore`2.Target">
+            <summary>
+            The target (terminating step) of the pipeline.
+            </summary>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore`2.Use(System.Func{`0,`0})">
+            <summary>
+            Adds the component.
+            </summary>
+            <param name="component">The component.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore`2.UseTarget(`0)">
+            <summary>
+            Sets the pipeline target.
+            The target is the last (terminating) step of the pipeline.
+            </summary>
+            <param name="target">The target.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore`2.Copy">
+            <summary>
+            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
+            </summary>
+            <returns>The new instance of the pipeline builder.</returns>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderCore`2.Build(`0)">
+            <summary>
+            Builds the pipeline.
+            </summary>
+            <param name="target">The target of the pipeline.</param>
+            <returns>The pipeline delegate which is the start of the pipeline.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderFull`5">
+            <summary>
+            The pipeline builder implementing all available pipeline builder parts.
+            </summary>
+            <typeparam name="TDelegate">The type of the delegate.</typeparam>
+            <typeparam name="TPipelineStep">The type of the step.</typeparam>
+            <typeparam name="TPredicate">The type of the predicate.</typeparam>
+            <typeparam name="TPipelineCondition">The type of the condition.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderWithServiceProvider`2">
+            <summary>
+            The pipeline builder with service provider.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="P:DevUniverse.Pipelines.Core.Shared.Builders.IPipelineBuilderWithServiceProvider`2.ServiceProvider">
             <summary>
             The service provider.
             </summary>
         </member>
-        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1">
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.StepInterface.IPipelineBuilderStepInterface`3">
             <summary>
-            The pipeline builder without input parameters which returns the result.
+            The pipeline builder with the possibility to add the pipeline step using the <see cref="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStepBasic"/>> implementation.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TPipelineStep">The pipeline step type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.StepInterface.IPipelineBuilderStepInterface`3.Use(System.Func{`1})">
+            <summary>
+            Add the component from the pipeline step interface implementation.
+            </summary>
+            <param name="pipelineStepFactory">The factory which provides the pipeline step instance.</param>
+            <returns>The current instance of the pipeline builder.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Builders.StepInterface.IPipelineBuilderStepInterfaceWithServiceProvider`3">
+            <summary>
+            The pipeline builder with the possibility to add the pipeline step using the <see cref="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStepBasic"/>> implementation.
+            </summary>
+            <typeparam name="TDelegate">The delegate type.</typeparam>
+            <typeparam name="TPipelineStep">The pipeline step type.</typeparam>
+            <typeparam name="TResult">The result pipeline builder type.</typeparam>
+        </member>
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Builders.StepInterface.IPipelineBuilderStepInterfaceWithServiceProvider`3.Use``1(System.Func{System.IServiceProvider,``0})">
+            <summary>
+            Add the component from the pipeline step interface implementation.
+            Requires the service provider to be set.
+            </summary>
+            <param name="pipelineStepFactory">The factory which provides the pipeline step instance.</param>
+            <typeparam name="TStep">The pipeline step type.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Conditions.IPipelineConditionBasic">
+            <summary>
+            The basic pipeline condition.
+            </summary>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`1">
+            <summary>
+            The pipeline step without the parameters which returns the result.
             </summary>
             <typeparam name="TResult">The type of the result.</typeparam>
         </member>
-        <member name="P:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Target">
-            <summary>
-            The target (terminating step) of the pipeline.
-            </summary>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Use(System.Func{System.Func{`0},System.Func{`0}})">
-            <summary>
-            Adds the component.
-            </summary>
-            <param name="component">The component.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Use(System.Func{System.Func{`0},`0})">
-            <summary>
-            Adds the component created from the handler.
-            </summary>
-            <param name="handler">The handler.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Use``1">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <typeparam name="TPipelineStep">The type of the pipeline step.</typeparam>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Use(System.Func{DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Use(System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.UseIf(System.Func{System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.UseIf(System.Func{System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.UseIf(System.Func{System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.UseBranchIf(System.Func{System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.UseBranchIf(System.Func{System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.UseBranchIf(System.Func{System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.UseTarget(System.Func{`0})">
-            <summary>
-            Sets the pipeline target.
-            The target is the last (terminating) step of the pipeline.
-            </summary>
-            <param name="target">The target.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Build">
-            <summary>
-            Builds the pipeline.
-            </summary>
-            <returns>The pipeline delegate which is the start of the pipeline.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`1.Copy">
-            <summary>
-            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
-            </summary>
-            <returns>The new instance of the pipeline builder.</returns>
-        </member>
-        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2">
-            <summary>
-            The pipeline builder with 1 input parameter which returns the result.
-            </summary>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="TResult">The type of the result.</typeparam>
-        </member>
-        <member name="P:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Target">
-            <summary>
-            The target (terminating step) of the pipeline.
-            </summary>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Use(System.Func{System.Func{`0,`1},System.Func{`0,`1}})">
-            <summary>
-            Adds the component.
-            </summary>
-            <param name="component">The component.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Use(System.Func{`0,System.Func{`0,`1},`1})">
-            <summary>
-            Adds the component created from the handler.
-            </summary>
-            <param name="handler">The handler.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Use``1">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <typeparam name="TPipelineStep">The type of the pipeline step.</typeparam>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Use(System.Func{DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Use(System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.UseIf(System.Func{`0,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.UseIf(System.Func{`0,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.UseIf(System.Func{`0,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.UseBranchIf(System.Func{`0,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.UseBranchIf(System.Func{`0,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.UseBranchIf(System.Func{`0,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.UseTarget(System.Func{`0,`1})">
-            <summary>
-            Sets the pipeline target.
-            The target is the last (terminating) step of the pipeline.
-            </summary>
-            <param name="target">The target.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Build">
-            <summary>
-            Builds the pipeline.
-            </summary>
-            <returns>The pipeline delegate which is the start of the pipeline.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`2.Copy">
-            <summary>
-            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
-            </summary>
-            <returns>The new instance of the pipeline builder.</returns>
-        </member>
-        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3">
-            <summary>
-            The pipeline builder with 2 input parameters which returns the result.
-            </summary>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="TResult">The type of the result.</typeparam>
-        </member>
-        <member name="P:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Target">
-            <summary>
-            The target (terminating step) of the pipeline.
-            </summary>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Use(System.Func{System.Func{`0,`1,`2},System.Func{`0,`1,`2}})">
-            <summary>
-            Adds the component.
-            </summary>
-            <param name="component">The component.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Use(System.Func{`0,`1,System.Func{`0,`1,`2},`2})">
-            <summary>
-            Adds the component created from the handler.
-            </summary>
-            <param name="handler">The handler.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Use``1">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <typeparam name="TPipelineStep">The type of the pipeline step.</typeparam>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Use(System.Func{DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1,`2}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Use(System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1,`2}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.UseIf(System.Func{`0,`1,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.UseIf(System.Func{`0,`1,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.UseIf(System.Func{`0,`1,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.UseBranchIf(System.Func{`0,`1,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.UseBranchIf(System.Func{`0,`1,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.UseBranchIf(System.Func{`0,`1,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.UseTarget(System.Func{`0,`1,`2})">
-            <summary>
-            Sets the pipeline target.
-            The target is the last (terminating) step of the pipeline.
-            </summary>
-            <param name="target">The target.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Build">
-            <summary>
-            Builds the pipeline.
-            </summary>
-            <returns>The pipeline delegate which is the start of the pipeline.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`3.Copy">
-            <summary>
-            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
-            </summary>
-            <returns>The new instance of the pipeline builder.</returns>
-        </member>
-        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4">
-            <summary>
-            The pipeline builder with 3 input parameters which returns the result.
-            </summary>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
-            <typeparam name="TResult">The type of the result.</typeparam>
-        </member>
-        <member name="P:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Target">
-            <summary>
-            The target (terminating step) of the pipeline.
-            </summary>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Use(System.Func{System.Func{`0,`1,`2,`3},System.Func{`0,`1,`2,`3}})">
-            <summary>
-            Adds the component.
-            </summary>
-            <param name="component">The component.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Use(System.Func{`0,`1,`2,System.Func{`0,`1,`2,`3},`3})">
-            <summary>
-            Adds the component created from the handler.
-            </summary>
-            <param name="handler">The handler.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Use``1">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <typeparam name="TPipelineStep">The type of the pipeline step.</typeparam>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Use(System.Func{DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1,`2,`3}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Use(System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1,`2,`3}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.UseIf(System.Func{`0,`1,`2,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.UseIf(System.Func{`0,`1,`2,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.UseIf(System.Func{`0,`1,`2,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.UseBranchIf(System.Func{`0,`1,`2,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.UseBranchIf(System.Func{`0,`1,`2,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.UseBranchIf(System.Func{`0,`1,`2,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.UseTarget(System.Func{`0,`1,`2,`3})">
-            <summary>
-            Sets the pipeline target.
-            The target is the last (terminating) step of the pipeline.
-            </summary>
-            <param name="target">The target.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Build">
-            <summary>
-            Builds the pipeline.
-            </summary>
-            <returns>The pipeline delegate which is the start of the pipeline.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`4.Copy">
-            <summary>
-            Creates the new instance of the pipeline builder with same configuration (components/steps and target) as the current instance.
-            </summary>
-            <returns>The new instance of the pipeline builder.</returns>
-        </member>
-        <member name="T:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5">
-            <summary>
-            The pipeline builder with 4 input parameters which returns the result.
-            </summary>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
-            <typeparam name="T3">The type of the 4th parameter.</typeparam>
-            <typeparam name="TResult">The type of the result.</typeparam>
-        </member>
-        <member name="P:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Target">
-            <summary>
-            The target (terminating step) of the pipeline.
-            </summary>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Use(System.Func{System.Func{`0,`1,`2,`3,`4},System.Func{`0,`1,`2,`3,`4}})">
-            <summary>
-            Adds the component.
-            </summary>
-            <param name="component">The component.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Use(System.Func{`0,`1,`2,`3,System.Func{`0,`1,`2,`3,`4},`4})">
-            <summary>
-            Adds the component created from the handler.
-            </summary>
-            <param name="handler">The handler.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Use``1">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <typeparam name="TPipelineStep">The type of the pipeline step.</typeparam>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Use(System.Func{DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1,`2,`3,`4}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Use(System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Steps.IPipelineStep{`0,`1,`2,`3,`4}})">
-            <summary>
-            Add the component from the pipeline step interface implementation.
-            Requires the service provider to be set.
-            </summary>
-            <param name="factory">The factory which provides the pipeline step instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.UseIf(System.Func{`0,`1,`2,`3,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.UseIf(System.Func{`0,`1,`2,`3,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.UseIf(System.Func{`0,`1,`2,`3,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is rejoined to the main pipeline branch, so the next step of the main branch is executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.UseBranchIf(System.Func{`0,`1,`2,`3,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.UseBranchIf(System.Func{`0,`1,`2,`3,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}},System.Func{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.UseBranchIf(System.Func{`0,`1,`2,`3,System.Boolean},System.Action{DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}},System.Func{System.IServiceProvider,DevUniverse.Pipelines.Core.Builders.IPipelineBuilder{`0,`1,`2,`3,`4}})">
-            <summary>
-            Adds the pipeline component to the pipeline.
-            If condition is met the configuration is executed and it is NOT rejoined to the main pipeline branch, so the next component of the main branch is NOT executed after this configuration.
-            If condition is NOT met the configuration is just skipped and next step of the main branch is executed.
-            Requires the service provider to be set.
-            </summary>
-            <param name="predicate">The predicate which determines if the added pipeline component should be executed.</param>
-            <param name="configuration">The configuration of the branch pipeline builder.</param>
-            <param name="factory">The factory which provides the branch builder instance.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.UseTarget(System.Func{`0,`1,`2,`3,`4})">
-            <summary>
-            Sets the pipeline target.
-            The target is the last (terminating) step of the pipeline.
-            </summary>
-            <param name="target">The target.</param>
-            <returns>The current instance of the pipeline builder.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Build">
-            <summary>
-            Builds the pipeline.
-            </summary>
-            <returns>The pipeline delegate which is the start of the pipeline.</returns>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Builders.IPipelineBuilder`5.Copy">
-            <summary>
-            Creates the new instance of the pipeline builder with same configuration (components/steps, target, service provider) as the current instance.
-            </summary>
-            <returns>The new instance of the pipeline builder.</returns>
-        </member>
-        <member name="T:DevUniverse.Pipelines.Core.Steps.IPipelineStep">
-            <summary>
-            The basic pipeline step.
-            </summary>
-        </member>
-        <member name="T:DevUniverse.Pipelines.Core.Steps.IPipelineStep`1">
-            <summary>
-            The pipeline step without input parameters which returns the result.
-            </summary>
-            <typeparam name="TResult">The type of the result.</typeparam>
-        </member>
-        <member name="M:DevUniverse.Pipelines.Core.Steps.IPipelineStep`1.Invoke(System.Func{`0})">
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`1.Invoke(System.Func{`0})">
             <summary>
             Executes the logic of the step.
             </summary>
             <param name="next">The next step in the pipeline which can be executed after this one.</param>
             <returns>The result of the step execution.</returns>
         </member>
-        <member name="T:DevUniverse.Pipelines.Core.Steps.IPipelineStep`2">
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`2">
             <summary>
-            The pipeline step with 1 input parameter which returns the result.
+            The pipeline step with 1 parameter which returns the result.
             </summary>
-            <typeparam name="T0">The type of the parameter.</typeparam>
+            <typeparam name="TParam0">The type of the parameter.</typeparam>
             <typeparam name="TResult">The type of the result.</typeparam>
         </member>
-        <member name="M:DevUniverse.Pipelines.Core.Steps.IPipelineStep`2.Invoke(`0,System.Func{`0,`1})">
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`2.Invoke(`0,System.Func{`0,`1})">
             <summary>
             Executes the logic of the step.
             </summary>
@@ -859,15 +738,15 @@
             <param name="next">The next step in the pipeline which can be executed after this one.</param>
             <returns>The result of the step execution.</returns>
         </member>
-        <member name="T:DevUniverse.Pipelines.Core.Steps.IPipelineStep`3">
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`3">
             <summary>
-            The pipeline step with 2 input parameters which returns the result.
+            The pipeline step with 2 parameters which returns the result.
             </summary>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
             <typeparam name="TResult">The type of the result.</typeparam>
         </member>
-        <member name="M:DevUniverse.Pipelines.Core.Steps.IPipelineStep`3.Invoke(`0,`1,System.Func{`0,`1,`2})">
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`3.Invoke(`0,`1,System.Func{`0,`1,`2})">
             <summary>
             Executes the logic of the step.
             </summary>
@@ -876,16 +755,16 @@
             <param name="next">The next step in the pipeline which can be executed after this one.</param>
             <returns>The result of the step execution.</returns>
         </member>
-        <member name="T:DevUniverse.Pipelines.Core.Steps.IPipelineStep`4">
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`4">
             <summary>
-            The pipeline step with 3 input parameters which returns the result.
+            The pipeline step with 3 parameters which returns the result.
             </summary>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
             <typeparam name="TResult">The type of the result.</typeparam>
         </member>
-        <member name="M:DevUniverse.Pipelines.Core.Steps.IPipelineStep`4.Invoke(`0,`1,`2,System.Func{`0,`1,`2,`3})">
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`4.Invoke(`0,`1,`2,System.Func{`0,`1,`2,`3})">
             <summary>
             Executes the logic of the step.
             </summary>
@@ -895,17 +774,17 @@
             <param name="next">The next step in the pipeline which can be executed after this one.</param>
             <returns>The result of the step execution.</returns>
         </member>
-        <member name="T:DevUniverse.Pipelines.Core.Steps.IPipelineStep`5">
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`5">
             <summary>
-            The pipeline step with 4 input parameters which returns the result.
+            The pipeline step with 4 parameters which returns the result.
             </summary>
-            <typeparam name="T0">The type of the 1st parameter.</typeparam>
-            <typeparam name="T1">The type of the 2nd parameter.</typeparam>
-            <typeparam name="T2">The type of the 3rd parameter.</typeparam>
-            <typeparam name="T3">The type of the 4th parameter.</typeparam>
+            <typeparam name="TParam0">The type of the 1st parameter.</typeparam>
+            <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
+            <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
+            <typeparam name="TParam3">The type of the 4th parameter.</typeparam>
             <typeparam name="TResult">The type of the result.</typeparam>
         </member>
-        <member name="M:DevUniverse.Pipelines.Core.Steps.IPipelineStep`5.Invoke(`0,`1,`2,`3,System.Func{`0,`1,`2,`3,`4})">
+        <member name="M:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStep`5.Invoke(`0,`1,`2,`3,System.Func{`0,`1,`2,`3,`4})">
             <summary>
             Executes the logic of the step.
             </summary>
@@ -915,6 +794,11 @@
             <param name="param3">The 4th parameter.</param>
             <param name="next">The next step in the pipeline which can be executed after this one.</param>
             <returns>The result of the step execution.</returns>
+        </member>
+        <member name="T:DevUniverse.Pipelines.Core.Shared.Steps.IPipelineStepBasic">
+            <summary>
+            The basic pipeline step.
+            </summary>
         </member>
     </members>
 </doc>
