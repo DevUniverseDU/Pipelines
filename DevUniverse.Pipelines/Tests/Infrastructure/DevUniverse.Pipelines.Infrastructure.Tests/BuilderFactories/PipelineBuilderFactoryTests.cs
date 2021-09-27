@@ -18,7 +18,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
 
         #region Create
 
-        public static TheoryData<Func<object>, Type> CreateGenericTestData =>
+        public static TheoryData<Func<object>, Type> TestDataCreateGeneric =>
             new TheoryData<Func<object>, Type>()
             {
                 {
@@ -26,19 +26,19 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
                     typeof(PipelineBuilder<Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>((IEnumerable<object>)null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>((IEnumerable<object?>?)null),
                     typeof(PipelineBuilder<Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>((object[])null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>((object?[]?)null),
                     typeof(PipelineBuilder<Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>(new List<object>() { null }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>(new List<object?>() { null }),
                     typeof(PipelineBuilder<Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>(new List<object>() { PipelineBuilderFactoryTests.ServiceProvider }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<Task>(new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider }),
                     typeof(PipelineBuilder<Task>)
                 },
                 {
@@ -51,19 +51,19 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
                     typeof(PipelineBuilder<string, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>((IEnumerable<object>)null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>((IEnumerable<object?>?)null),
                     typeof(PipelineBuilder<string, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>((object[])null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>((object?[]?)null),
                     typeof(PipelineBuilder<string, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>(new List<object>() { null }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>(new List<object?>() { null }),
                     typeof(PipelineBuilder<string, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>(new List<object>() { PipelineBuilderFactoryTests.ServiceProvider }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, Task>(new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider }),
                     typeof(PipelineBuilder<string, Task>)
                 },
                 {
@@ -76,19 +76,19 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
                     typeof(PipelineBuilder<string, int, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>((IEnumerable<object>)null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>((IEnumerable<object?>?)null),
                     typeof(PipelineBuilder<string, int, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>((object[])null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>((object?[]?)null),
                     typeof(PipelineBuilder<string, int, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>(new List<object>() { null }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>(new List<object?>() { null }),
                     typeof(PipelineBuilder<string, int, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>(new List<object>() { PipelineBuilderFactoryTests.ServiceProvider }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, Task>(new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider }),
                     typeof(PipelineBuilder<string, int, Task>)
                 },
                 {
@@ -101,19 +101,19 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
                     typeof(PipelineBuilder<string, int, object, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>((IEnumerable<object>)null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>((IEnumerable<object?>?)null),
                     typeof(PipelineBuilder<string, int, object, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>((object[])null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>((object?[]?)null),
                     typeof(PipelineBuilder<string, int, object, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>(new List<object>() { null }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>(new List<object?>() { null }),
                     typeof(PipelineBuilder<string, int, object, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>(new List<object>() { PipelineBuilderFactoryTests.ServiceProvider }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, Task>(new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider }),
                     typeof(PipelineBuilder<string, int, object, Task>)
                 },
                 {
@@ -126,20 +126,20 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
                     typeof(PipelineBuilder<string, int, object, string, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>((IEnumerable<object>)null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>((IEnumerable<object?>?)null),
                     typeof(PipelineBuilder<string, int, object, string, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>((object[])null),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>((object?[]?)null),
                     typeof(PipelineBuilder<string, int, object, string, Task>)
                 },
                 {
-                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>(new List<object>() { null }),
+                    () => PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>(new List<object?>() { null }),
                     typeof(PipelineBuilder<string, int, object, string, Task>)
                 },
                 {
                     () =>
-                        PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>(new List<object>() { PipelineBuilderFactoryTests.ServiceProvider }),
+                        PipelineBuilderFactoryTests.CreateSut().Create<string, int, object, string, Task>(new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider }),
                     typeof(PipelineBuilder<string, int, object, string, Task>)
                 },
                 {
@@ -149,7 +149,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
             };
 
         [Theory]
-        [MemberData(nameof(PipelineBuilderFactoryTests.CreateGenericTestData))]
+        [MemberData(nameof(PipelineBuilderFactoryTests.TestDataCreateGeneric))]
         public void Create_Generic_ReturnsCorrectResult(Func<object> creatingDelegate, Type expectedResultType)
         {
             var actualResult = creatingDelegate.Invoke();
@@ -158,55 +158,45 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
             Assert.Equal(expectedResultType, actualResult.GetType());
         }
 
-        public static TheoryData<Type, string> CreateNonGenericExceptionTestData =>
-            new TheoryData<Type, string>()
-            {
-                { null, "type" }
-            };
 
-        [Theory]
-        [MemberData(nameof(PipelineBuilderFactoryTests.CreateNonGenericExceptionTestData))]
-        public void Create_ArgumentIsNull_ThrowsException(Type type, string parameterName)
+        [Fact]
+        public void Create_ArgumentIsNull_ThrowsException()
         {
-            var expectedResultMessage = TestUtils.GetArgumentNullExceptionMessage(parameterName);
-
             var sut = PipelineBuilderFactoryTests.CreateSut();
 
-            var actualResult = Assert.Throws<ArgumentNullException>(() => sut.Create(type));
-
-            Assert.Equal(expectedResultMessage, actualResult.Message);
+            Assert.Throws<ArgumentNullException>(() => sut.Create(null!));
         }
 
-        public static TheoryData<Type, IEnumerable<object>> CreateNonGenericIEnumerableTestData =>
-            new TheoryData<Type, IEnumerable<object>>()
+        public static TheoryData<Type, IEnumerable<object?>?> TestDataCreateNonGenericIEnumerable =>
+            new TheoryData<Type, IEnumerable<object?>?>()
             {
                 { typeof(PipelineBuilderTest<Task>), null },
-                { typeof(PipelineBuilderTest<Task>), new List<object>() { 5, 100M } },
+                { typeof(PipelineBuilderTest<Task>), new List<object?>() { 5, 100M } },
 
                 { typeof(PipelineBuilder<Task>), null },
-                { typeof(PipelineBuilder<Task>), new List<object>() { null } },
-                { typeof(PipelineBuilder<Task>), new List<object>() { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<Task>), new List<object?>() { null } },
+                { typeof(PipelineBuilder<Task>), new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, Task>), null },
-                { typeof(PipelineBuilder<string, Task>), new List<object>() { null } },
-                { typeof(PipelineBuilder<string, Task>), new List<object>() { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<string, Task>), new List<object?>() { null } },
+                { typeof(PipelineBuilder<string, Task>), new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, int, Task>), null },
-                { typeof(PipelineBuilder<string, int, Task>), new List<object>() { null } },
-                { typeof(PipelineBuilder<string, int, Task>), new List<object>() { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<string, int, Task>), new List<object?>() { null } },
+                { typeof(PipelineBuilder<string, int, Task>), new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, int, object, Task>), null },
-                { typeof(PipelineBuilder<string, int, object, Task>), new List<object>() { null } },
-                { typeof(PipelineBuilder<string, int, object, Task>), new List<object>() { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<string, int, object, Task>), new List<object?>() { null } },
+                { typeof(PipelineBuilder<string, int, object, Task>), new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, int, object, string, Task>), null },
-                { typeof(PipelineBuilder<string, int, object, string, Task>), new List<object>() { null } },
-                { typeof(PipelineBuilder<string, int, object, string, Task>), new List<object>() { PipelineBuilderFactoryTests.ServiceProvider } }
+                { typeof(PipelineBuilder<string, int, object, string, Task>), new List<object?>() { null } },
+                { typeof(PipelineBuilder<string, int, object, string, Task>), new List<object?>() { PipelineBuilderFactoryTests.ServiceProvider } }
             };
 
         [Theory]
-        [MemberData(nameof(PipelineBuilderFactoryTests.CreateNonGenericIEnumerableTestData))]
-        public void Create_NonGeneric_IEnumerable_ReturnsCorrectResult(Type expectedResultType, IEnumerable<object> constructorArguments)
+        [MemberData(nameof(PipelineBuilderFactoryTests.TestDataCreateNonGenericIEnumerable))]
+        public void Create_NonGeneric_IEnumerable_ReturnsCorrectResult(Type expectedResultType, IEnumerable<object?>? constructorArguments)
         {
             var sut = PipelineBuilderFactoryTests.CreateSut();
 
@@ -216,28 +206,28 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
             Assert.Equal(expectedResultType, actualResult.GetType());
         }
 
-        public static TheoryData<Type, IEnumerable<object>> CreateNonGenericArrayTestData =>
-            new TheoryData<Type, IEnumerable<object>>()
+        public static TheoryData<Type, IEnumerable<object?>?> TestDataCreateNonGenericArray =>
+            new TheoryData<Type, IEnumerable<object?>?>()
             {
                 { typeof(PipelineBuilder<Task>), null },
-                { typeof(PipelineBuilder<Task>), new object[] { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<Task>), new object?[] { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, Task>), null },
-                { typeof(PipelineBuilder<string, Task>), new object[] { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<string, Task>), new object?[] { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, int, Task>), null },
-                { typeof(PipelineBuilder<string, int, Task>), new object[] { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<string, int, Task>), new object?[] { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, int, object, Task>), null },
-                { typeof(PipelineBuilder<string, int, object, Task>), new object[] { PipelineBuilderFactoryTests.ServiceProvider } },
+                { typeof(PipelineBuilder<string, int, object, Task>), new object?[] { PipelineBuilderFactoryTests.ServiceProvider } },
 
                 { typeof(PipelineBuilder<string, int, object, string, Task>), null },
-                { typeof(PipelineBuilder<string, int, object, string, Task>), new object[] { PipelineBuilderFactoryTests.ServiceProvider } }
+                { typeof(PipelineBuilder<string, int, object, string, Task>), new object?[] { PipelineBuilderFactoryTests.ServiceProvider } }
             };
 
         [Theory]
-        [MemberData(nameof(PipelineBuilderFactoryTests.CreateNonGenericArrayTestData))]
-        public void Create_NonGeneric_Array_ReturnsCorrectResult(Type expectedResultType, object[] constructorArguments)
+        [MemberData(nameof(PipelineBuilderFactoryTests.TestDataCreateNonGenericArray))]
+        public void Create_NonGeneric_Array_ReturnsCorrectResult(Type expectedResultType, object?[]? constructorArguments)
         {
             var sut = PipelineBuilderFactoryTests.CreateSut();
 
@@ -254,11 +244,10 @@ namespace DevUniverse.Pipelines.Infrastructure.Tests.BuilderFactories
         private static IPipelineBuilderFactory CreateSut() => new PipelineBuilderFactory();
 
         #endregion CreateSut
-    }
 
-
-    public class PipelineBuilderTest<TResult> : PipelineBuilder<TResult>
-    {
-        public PipelineBuilderTest(int param0, decimal param1) : base(null) { }
+        private class PipelineBuilderTest<TResult> : PipelineBuilder<TResult>
+        {
+            public PipelineBuilderTest(int valueInt, decimal valueDecimal) : base(null) { }
+        }
     }
 }
