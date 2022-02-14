@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 
 using DevUniverse.Pipelines.Core.Builders;
 using DevUniverse.Pipelines.Core.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Steps;
+using DevUniverse.Pipelines.Core.Steps;
 
 namespace DevUniverse.Pipelines.Infrastructure.Builders
 {
     /// <inheritdoc cref="IPipelineBuilderAsync{TParam0, TParam1, TParam2, TParam3, TResult}" />
     public class PipelineBuilderAsync<TParam0, TParam1, TParam2, TParam3, TResult> :
-        PipelineBuilderAsyncBasic
+        PipelineBuilderAsyncBase
         <
             Func<TParam0, TParam1, TParam2, TParam3, TResult>,
             IPipelineStep<TParam0, TParam1, TParam2, TParam3, TResult>,

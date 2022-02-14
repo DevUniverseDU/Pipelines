@@ -1,14 +1,14 @@
 ﻿using System;
 
+using DevUniverse.Pipelines.Core.Builders.Shared;
 using DevUniverse.Pipelines.Core.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Builders;
-using DevUniverse.Pipelines.Core.Shared.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Steps;
-using DevUniverse.Pipelines.Infrastructure.Shared.Builders;
+using DevUniverse.Pipelines.Core.Conditions.Shared;
+using DevUniverse.Pipelines.Core.Steps.Shared;
+using DevUniverse.Pipelines.Infrastructure.Builders.Shared;
 
 namespace DevUniverse.Pipelines.Infrastructure.Builders
 {
-    /// <inheritdoc cref="IPipelineBuilderFull{TDelegate, TPipelineStep, TPredicate, TPipelineCondition, TResult}"/>/>
+    /// <inheritdoc cref="IPipelineBuilder{TDelegate,TPipelineStep,TPredicate,TPipelineCondition,TResult}"/>/>
     public class PipelineBuilderBase
     <
         TDelegate,
@@ -28,7 +28,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders
         where TPipelineStep : IPipelineStepBasic
         where TPredicate : Delegate
         where TPipelineCondition : IPipelineConditionBasic
-        where TResult : IPipelineBuilderFull
+        where TResult : IPipelineBuilder
         <
             TDelegate,
             TPipelineStep,

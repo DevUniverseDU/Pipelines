@@ -2,8 +2,7 @@
 using System.Threading.Tasks;
 
 using DevUniverse.Pipelines.Core.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Builders;
-using DevUniverse.Pipelines.Core.Shared.Steps;
+using DevUniverse.Pipelines.Core.Steps;
 
 namespace DevUniverse.Pipelines.Core.Builders
 {
@@ -13,7 +12,7 @@ namespace DevUniverse.Pipelines.Core.Builders
     /// <typeparam name="TResult">The type of the result.</typeparam>
     public interface IPipelineBuilderAsync<TResult> :
         IPipelineBuilderAsync,
-        IPipelineBuilderFull
+        Shared.IPipelineBuilder
         <
             Func<TResult>,
             IPipelineStep<TResult>,

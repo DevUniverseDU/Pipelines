@@ -1,8 +1,7 @@
 ﻿using System;
 
 using DevUniverse.Pipelines.Core.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Builders;
-using DevUniverse.Pipelines.Core.Shared.Steps;
+using DevUniverse.Pipelines.Core.Steps;
 
 namespace DevUniverse.Pipelines.Core.Builders
 {
@@ -13,8 +12,7 @@ namespace DevUniverse.Pipelines.Core.Builders
     /// <typeparam name="TParam1">The type of the 2nd parameter.</typeparam>
     /// <typeparam name="TParam2">The type of the 3rd parameter.</typeparam>
     /// <typeparam name="TResult">The type of the result.</typeparam>
-    public interface IPipelineBuilder<TParam0, TParam1, TParam2, TResult> :
-        IPipelineBuilderFull
+    public interface IPipelineBuilder<TParam0, TParam1, TParam2, TResult> : Shared.IPipelineBuilder
         <
             Func<TParam0, TParam1, TParam2, TResult>,
             IPipelineStep<TParam0, TParam1, TParam2, TResult>,
