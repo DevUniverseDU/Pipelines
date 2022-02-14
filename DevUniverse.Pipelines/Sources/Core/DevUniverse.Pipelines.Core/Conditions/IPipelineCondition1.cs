@@ -1,4 +1,4 @@
-﻿using DevUniverse.Pipelines.Core.Shared.Conditions;
+﻿using DevUniverse.Pipelines.Core.Conditions.Shared;
 
 namespace DevUniverse.Pipelines.Core.Conditions
 {

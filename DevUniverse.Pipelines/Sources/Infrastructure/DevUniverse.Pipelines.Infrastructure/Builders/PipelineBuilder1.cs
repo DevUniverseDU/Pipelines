@@ -2,7 +2,7 @@
 
 using DevUniverse.Pipelines.Core.Builders;
 using DevUniverse.Pipelines.Core.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Steps;
+using DevUniverse.Pipelines.Core.Steps;
 
 namespace DevUniverse.Pipelines.Infrastructure.Builders
 {

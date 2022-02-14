@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
+using DevUniverse.Pipelines.Core.BuilderFactories.Shared;
 using DevUniverse.Pipelines.Core.Builders;
-using DevUniverse.Pipelines.Core.Shared.BuilderFactories;
 
 namespace DevUniverse.Pipelines.Core.BuilderFactories
 {

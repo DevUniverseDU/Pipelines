@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 using DevUniverse.Pipelines.Core.BuilderFactories;
 using DevUniverse.Pipelines.Core.Builders;
+using DevUniverse.Pipelines.Infrastructure.BuilderFactories.Shared;
 using DevUniverse.Pipelines.Infrastructure.Builders;
-using DevUniverse.Pipelines.Infrastructure.Shared.BuilderFactories;
 
 namespace DevUniverse.Pipelines.Infrastructure.BuilderFactories
 {

@@ -2,6 +2,7 @@
 
 using DevUniverse.Pipelines.Core.BuilderFactories;
 using DevUniverse.Pipelines.Infrastructure.BuilderFactories;
+using DevUniverse.Pipelines.Infrastructure.Shared.Utils;
 
 using Microsoft.Extensions.DependencyInjection;
 

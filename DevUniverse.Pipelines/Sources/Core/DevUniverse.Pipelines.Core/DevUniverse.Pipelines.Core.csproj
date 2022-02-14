@@ -31,7 +31,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="DevUniverse.Pipelines.Core Nuget Readme.md" Pack="true" PackagePath="\"/>
+      <Content Include="DevUniverse.Pipelines.Core Nuget Readme.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>
