@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
+using DevUniverse.Pipelines.Infrastructure.Shared.Utils;
+
 namespace DevUniverse.Pipelines.Infrastructure.Shared.Extensions
 {
     /// <summary>

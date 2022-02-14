@@ -1,4 +1,4 @@
-﻿using DevUniverse.Pipelines.Core.Shared.Builders;
+﻿using DevUniverse.Pipelines.Core.Builders.Shared;
 
 namespace DevUniverse.Pipelines.Core.Builders
 {

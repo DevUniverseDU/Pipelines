@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 using DevUniverse.Pipelines.Core.BuilderFactories;
 using DevUniverse.Pipelines.Core.Builders;
+using DevUniverse.Pipelines.Core.Builders.Shared;
 using DevUniverse.Pipelines.Core.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Builders;
-using DevUniverse.Pipelines.Core.Shared.Steps;
+using DevUniverse.Pipelines.Core.Steps.Shared;
+using DevUniverse.Pipelines.Infrastructure.Builders.Shared;
 using DevUniverse.Pipelines.Infrastructure.Shared;
-using DevUniverse.Pipelines.Infrastructure.Shared.Builders;
 
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DevUniverse.Pipelines.Infrastructure.Builders
 {
-    /// <inheritdoc cref="IPipelineBuilderFull{TDelegate, TPipelineStep, TPredicate, TPipelineConditionAsync, TResult}"/>/>
-    public abstract class PipelineBuilderAsyncBasic
+    /// <inheritdoc cref="Core.Builders.Shared.IPipelineBuilder{TDelegate,TPipelineStep,TPredicate,TPipelineCondition,TResult}"/>/>
+    public abstract class PipelineBuilderAsyncBase
     <
         TDelegate,
         TPipelineStep,
@@ -39,7 +39,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders
         where TPipelineStep : IPipelineStepBasic
         where TPredicate : Delegate
         where TPipelineConditionAsync : IPipelineConditionAsyncBasic
-        where TResult : IPipelineBuilderFull
+        where TResult : Core.Builders.Shared.IPipelineBuilder
         <
             TDelegate,
             TPipelineStep,
@@ -76,7 +76,7 @@ namespace DevUniverse.Pipelines.Infrastructure.Builders
 #pragma warning disable 8618
 
         // properties are always initialized by method call in constructor
-        protected PipelineBuilderAsyncBasic(IServiceProvider? serviceProvider = null) : base(serviceProvider) => this.InitializeProperties();
+        protected PipelineBuilderAsyncBase(IServiceProvider? serviceProvider = null) : base(serviceProvider) => this.InitializeProperties();
 
 #pragma warning restore 8618
 

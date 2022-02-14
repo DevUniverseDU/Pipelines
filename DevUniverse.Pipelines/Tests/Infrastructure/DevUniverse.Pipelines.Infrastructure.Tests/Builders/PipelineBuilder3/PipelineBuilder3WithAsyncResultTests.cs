@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 using DevUniverse.Pipelines.Core.Builders;
 using DevUniverse.Pipelines.Core.Conditions;
-using DevUniverse.Pipelines.Core.Shared.Steps;
+using DevUniverse.Pipelines.Core.Steps;
 using DevUniverse.Pipelines.Infrastructure.Builders;
 using DevUniverse.Pipelines.Infrastructure.Shared.Extensions;
 
