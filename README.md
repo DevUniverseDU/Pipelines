@@ -1,3 +1,7 @@
+# DEPRECATED
+
+## New repository - https://github.com/ExcellenceDevelopment/Excellence.Pipelines
+
 # Pipelines
 
 ## Overview
